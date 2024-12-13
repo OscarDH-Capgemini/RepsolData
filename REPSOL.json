@@ -4258,6 +4258,25 @@
         "start_production_period": "2025-01-01",
         "end_production_period": "2035-01-01",
         "issuing_date": "2024-12-12"
+    },
+    {
+        "go_number": "8437025225852230045048799775801",
+        "issuing_body": "843702505",
+        "energy_carrier": "Gas",
+        "type_of_gas": "Hidrógeno Verde",
+        "dissemination_level": "Público",
+        "original_holder": "Red Gas Bilbao",
+        "production_device": "Paneles Solares",
+        "capacity": "935kW",
+        "date_operational": "2025-01-01",
+        "energy_source": "Hidrógeno",
+        "mixture_of_inputs": "100% Renovable",
+        "type_of_installation": "Autoconsumos",
+        "description_technology": "Electrolizador",
+        "production_device_location": "Madrid",
+        "purpose": "Generación Distribuida",
+        "start_production_period": "2025-01-01",
+        "end_production_period": "2035-01-01",
+        "issuing_date": "2024-12-12"
     }
-    
 ]
