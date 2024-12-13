@@ -9,16 +9,20 @@ JSON_FILE_PATH = "C:/Users/odelgado/RepsolData/REPSOL.json"
 REPO_PATH = "C:/Users/odelgado/RepsolData"
 
 # Función para generar una nueva entrada
-def generate_new_entry():
+def generate_new_entry(data):
+    # Encuentra el mayor go_number actual
+    last_go_number = max(int(entry["go_number"]) for entry in data)
+    new_go_number = last_go_number + 1  # Incrementa en 1
+
     return {
-        "go_number": str(random.randint(8437025225000000000000000000000, 8437025225999999999999999999999)),
+        "go_number": str(new_go_number),  # Convierte de nuevo a string
         "issuing_body": str(random.randint(843702500, 843702599)),
         "energy_carrier": random.choice(["Gas", "Electricidad", "Hidrógeno"]),
         "type_of_gas": random.choice(["N/A", "Metano", "Hidrógeno Verde"]),
-        "dissemination_level": "Público",
+        "dissemination_level": "Autoconsumos",
         "original_holder": random.choice(["Energía Solar Barcelona", "Hidrogenera Madrid", "Red Gas Bilbao"]),
         "production_device": "843702522500000001",
-        "capacity": "random.randint(100, 1000)",
+        "capacity": str(random.randint(100, 1000)),
         "date_operational": "2025-01-01",
         "energy_source": random.choice(["Solar", "Hidrógeno", "Fósil"]),
         "mixture_of_inputs": 2,
@@ -30,6 +34,7 @@ def generate_new_entry():
         "end_production_period": "2035-01-01",
         "issuing_date": "2024-12-12"
     }
+
 
 # Función para leer y sobrescribir el JSON
 def update_json():
