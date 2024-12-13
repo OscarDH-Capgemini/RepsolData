@@ -4358,5 +4358,25 @@
         "start_production_period": "2025-01-01",
         "end_production_period": "2035-01-01",
         "issuing_date": "2024-12-12"
+    },
+    {
+        "go_number": "8437025225464890668251604326085",
+        "issuing_body": "843702579",
+        "energy_carrier": "Gas",
+        "type_of_gas": "Metano",
+        "dissemination_level": "Público",
+        "original_holder": "Energía Solar Barcelona",
+        "production_device": "Paneles Solares",
+        "capacity": "172kW",
+        "date_operational": "2025-01-01",
+        "energy_source": "Fósil",
+        "mixture_of_inputs": "50% Renovable",
+        "type_of_installation": "Autoconsumos",
+        "description_technology": "Paneles solares fotovoltaicos",
+        "production_device_location": "Barcelona",
+        "purpose": "Generación Distribuida",
+        "start_production_period": "2025-01-01",
+        "end_production_period": "2035-01-01",
+        "issuing_date": "2024-12-12"
     }
 ]
