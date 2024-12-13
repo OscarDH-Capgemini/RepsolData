@@ -4358,5 +4358,25 @@
         "start_production_period": "2025-01-01",
         "end_production_period": "2035-01-01",
         "issuing_date": "2024-12-12"
+    },
+    {
+        "go_number": "8437025225807466877990327357061",
+        "issuing_body": "843702588",
+        "energy_carrier": "Gas",
+        "type_of_gas": "Hidrógeno Verde",
+        "dissemination_level": "Público",
+        "original_holder": "Hidrogenera Madrid",
+        "production_device": "843702522500000001",
+        "capacity": 676,
+        "date_operational": "2025-01-01",
+        "energy_source": "Solar",
+        "mixture_of_inputs": "2",
+        "type_of_installation": "Autoconsumos",
+        "description_technology": "Paneles solares fotovoltaicos",
+        "production_device_location": "Madrid",
+        "purpose": "Generación Distribuida",
+        "start_production_period": "2025-01-01",
+        "end_production_period": "2035-01-01",
+        "issuing_date": "2024-12-12"
     }
 ]
