@@ -4238,5 +4238,25 @@
         "start_production_period": "27/11/2024",
         "end_production_period": "30/11/2024",
         "issuing_date": "02/12/2024"
+    },
+    {
+        "go_number": "8437025225293779328266559683079",
+        "issuing_body": "843702537",
+        "energy_carrier": "Hidrógeno",
+        "type_of_gas": "Metano",
+        "dissemination_level": "Público",
+        "original_holder": "Energía Solar Barcelona",
+        "production_device": "843702522500000001",
+        "capacity": 149,
+        "date_operational": "2025-01-01",
+        "energy_source": "Hidrógeno",
+        "mixture_of_inputs": "2",
+        "type_of_installation": "Autoconsumos",
+        "description_technology": "Paneles solares fotovoltaicos",
+        "production_device_location": "Madrid",
+        "purpose": "Generación Distribuida",
+        "start_production_period": "2025-01-01",
+        "end_production_period": "2035-01-01",
+        "issuing_date": "2024-12-12"
     }
 ]
