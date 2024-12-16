@@ -67,4 +67,4 @@ while time.time() - start_time < 3600:  # Durante 1 hora
     contador += update_json()  # Sobrescribir JSON con nueva entrada y actualizar el contador
     git_commit_and_push()  # Hacer push a GitHub
     print(f"Entradas añadidas hasta ahora: {contador}")  # Mostrar el contador
-    time.sleep(60)  # Esperar 1 minuto
+    time.sleep(5)  # Esperar 5 segundos
