@@ -20,7 +20,7 @@ def generate_new_entry(data):
         "energy_carrier": random.choice(["Gas", "Electricidad", "Hidrógeno"]),
         "type_of_gas": random.choice(["N/A", "Metano", "Hidrógeno Verde"]),
         "dissemination_level": "Autoconsumos",
-        "original_holder": random.choice(["Energía Solar Barcelona", "Hidrogenera Madrid", "Red Gas Bilbao"]),
+        "original_holder": "01XENERCLR",
         "production_device": "843702522500000001",
         "capacity": str(random.randint(100, 1000)),
         "date_operational": "2025-01-01",
@@ -41,13 +41,14 @@ def update_json():
     with open(JSON_FILE_PATH, "r", encoding="utf-8") as file:
         data = json.load(file)  # El JSON ya es una lista directamente
     
-    new_entry = generate_new_entry()
+    new_entry = generate_new_entry(data)  # Pasa los datos existentes
     data.append(new_entry)  # Agrega la nueva entrada directamente a la lista
     
     with open(JSON_FILE_PATH, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
     
     print(f"Entrada añadida: {new_entry}")
+    return 1  # Devuelve 1 para incrementar el contador
 
 
 # Función para hacer commit y push
@@ -58,9 +59,12 @@ def git_commit_and_push():
     subprocess.run(["git", "push"], check=True)
     print("Cambios subidos a GitHub.")
 
+
 # Bucle principal
 start_time = time.time()
+contador = 0  # Inicializa el contador
 while time.time() - start_time < 3600:  # Durante 1 hora
-    update_json()  # Sobrescribir JSON con nueva entrada
+    contador += update_json()  # Sobrescribir JSON con nueva entrada y actualizar el contador
     git_commit_and_push()  # Hacer push a GitHub
-    time.sleep(20)  # Esperar 20 segundos
+    print(f"Entradas añadidas hasta ahora: {contador}")  # Mostrar el contador
+    time.sleep(60)  # Esperar 1 minuto
