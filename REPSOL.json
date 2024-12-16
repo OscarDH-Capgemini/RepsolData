@@ -5338,5 +5338,25 @@
         "start_production_period": "2025-01-01",
         "end_production_period": "2035-01-01",
         "issuing_date": "2024-12-12"
+    },
+    {
+        "go_number": "843702522500000000000000000267",
+        "issuing_body": "843702546",
+        "energy_carrier": "Electricidad",
+        "type_of_gas": "Metano",
+        "dissemination_level": "Autoconsumos",
+        "original_holder": "01XENERCLR",
+        "production_device": "843702522500000001",
+        "capacity": "987",
+        "date_operational": "2025-01-01",
+        "energy_source": "Solar",
+        "mixture_of_inputs": 2,
+        "type_of_installation": "Autoconsumos",
+        "description_technology": "Paneles solares fotovoltaicos",
+        "production_device_location": "Bilbao",
+        "purpose": "Generación Distribuida",
+        "start_production_period": "2025-01-01",
+        "end_production_period": "2035-01-01",
+        "issuing_date": "2024-12-12"
     }
 ]
